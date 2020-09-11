@@ -1,0 +1,106 @@
+﻿body {
+    background: linear-gradient(0deg, #42575d, #8fa0a5);
+    width: 100vw;
+    min-height: 100vh;
+    color: white;
+    overflow-x:hidden;
+}
+
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: none; /* no underline */
+}
+#menuLateral {
+    height: 100vh;
+    width: 70px;
+    background: linear-gradient(45deg, #131313, #333);
+    left: 0;
+    top: 0;
+    position: fixed;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+    /*  Dependências Menu      */
+
+        #menuLateral div h1 {
+            color: white;
+            font-size: 25px;
+        }
+        #menuLateral div h3 {
+            color: white;
+            font-size: 15px;
+        }
+        #menuLateral div.item {
+            padding: 0.6rem;
+            border-bottom: 3px solid #333;
+            transition: 0.5s background;
+        }
+
+        #menuLateral div.rotuloMenu {
+            display:none;
+          
+        }
+
+    #menuLateral div h1 a {
+        color: inherit;
+        text-decoration: none;
+    }
+        #menuLateral.Aberto div.rotuloMenu {
+            display: block;
+            position: absolute;
+            white-space: nowrap;
+            
+        }
+            #menuLateral.Aberto div.rotuloMenu h1 {
+                margin-left: 1.5rem;
+            }
+       .Aberto {
+           width: 17vw !important;
+        }
+            .listaMenu{
+                width:100%;
+            }
+        .listaMenu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width:100%;
+        }
+                .listaMenu ul li{
+                    transition:0.5s ease-in-out;
+                    cursor:pointer;
+                }
+                    .listaMenu ul li:hover {
+                        background: rgba(25, 25, 25,0.5);
+                        text-shadow: rgba(255,255,255,0.3) 0px 0px 10px;
+                    }
+                .listaMenu ul li div{             
+                    margin: 0;
+                    padding:1.5rem 0.5rem;
+                }
+                .listaMenu ul li div div.itemLista{
+                    position:absolute;
+                    right:0;
+                }
+                    .listaMenu ul li.ativado {
+                        box-shadow: inset 10px 0px 1px #a5a5a5, inset 400px 0px 1px #ffffff36;
+                        background: rgba(10,10,10,0.2) !important;
+                    }
+
+
+#rodape {
+    position: fixed;
+    bottom: 0px;
+    width: 100vw !important;
+    max-width: none;
+    height: 50px;
+    background: linear-gradient(45deg, #161616, #202020);
+    color: white;
+}
+    #rodape div.row {
+        height: 100%;
+        font-size: 13px;
+        text-shadow: rgba(255,255,255,0.7) 0px 0px 10px;
+        padding:0rem 1rem;
+    }
